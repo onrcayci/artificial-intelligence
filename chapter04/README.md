@@ -31,6 +31,24 @@ Exploratory data analysis can be a good way to get an intuitive understanding an
 
 Feature importance provides a score for each feature in a dataset. A higher score means the feature has more importance or relevancy in relation to the output feature.
 
+Example code at [feature_extraction.py]
+
 ### Univariate selection
 
 Statistical tests can be used to determine which features have the strongest correlation to the output variable. The scikit-learn library has a class called `SelectKBest` that provides a set of statistical tests to select the K "best" features in a dataset.
+
+Example code at [select_best.py]
+
+### Correlation heatmaps
+
+A correlation exists between two features when there is a relation between the different values of the features. For example, if home prices go up as the square footage goes up, theese two features are said to be positively correlated. Correlation can be positive or negative.
+
+Correlation is a continuous value between -1 and 1:
+
+- If the correlation between two features is 1, there is a perfect direct correlation.
+- If the correlation between two features is -1, a perfect inverse correlation exists.
+- If the correlation is 0 between two features, there is no correlation between the two features.
+
+A heatmap makes it easy to identify which features are most correlatedto the target variable. `seaborn` library can be used to plot such a heatmap.
+
+Example code at [correlation_heatmap.py]
