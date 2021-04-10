@@ -30,3 +30,7 @@ Exploratory data analysis can be a good way to get an intuitive understanding an
 ### Feature importance
 
 Feature importance provides a score for each feature in a dataset. A higher score means the feature has more importance or relevancy in relation to the output feature.
+
+### Univariate selection
+
+Statistical tests can be used to determine which features have the strongest correlation to the output variable. The scikit-learn library has a class called `SelectKBest` that provides a set of statistical tests to select the K "best" features in a dataset.
