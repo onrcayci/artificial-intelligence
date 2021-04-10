@@ -31,13 +31,13 @@ Exploratory data analysis can be a good way to get an intuitive understanding an
 
 Feature importance provides a score for each feature in a dataset. A higher score means the feature has more importance or relevancy in relation to the output feature.
 
-Example code at [./feature_extraction.py]
+[Example code](feature_extraction.py)
 
 ### Univariate selection
 
 Statistical tests can be used to determine which features have the strongest correlation to the output variable. The scikit-learn library has a class called `SelectKBest` that provides a set of statistical tests to select the K "best" features in a dataset.
 
-Example code at [./select_best.py]
+[Example code](select_best.py)
 
 ### Correlation heatmaps
 
@@ -51,4 +51,4 @@ Correlation is a continuous value between -1 and 1:
 
 A heatmap makes it easy to identify which features are most correlatedto the target variable. `seaborn` library can be used to plot such a heatmap.
 
-Example code at [./correlation_heatmap.py]
+[Example code](correlation_heatmap.py)
